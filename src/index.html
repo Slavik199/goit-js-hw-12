@@ -4,19 +4,22 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>GoIt-JS-11</title>
     <link rel="stylesheet" href="./css/styles.css" />
+   
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+   <form class="form">
+    <label>
+      <input type="text" name="search-text" placeholder="Search images..." required />
+    </label>
+    <button type="submit">Search</button>
+  </form>
+  <ul class="gallery"></ul>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+<button class="load-more" style="display: none;">Load more</button>
+<span class="loader"></span>
 
-    <load src="./partials/footer.html" />
 
     <script type="module" src="./main.js"></script>
   </body>
